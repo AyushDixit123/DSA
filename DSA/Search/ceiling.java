@@ -11,6 +11,7 @@ static int binary(int[] arr, int target){
     int e = arr.length-1;
 
 
+
     while(s<=e){
 
       int mid =   s+ (e-s)/2;           //(s+e)/2; is not applies bcz let;s say if e=Int.MAX then s+e will be put of range

@@ -23,6 +23,7 @@ while(s<=e){
       s++;
     }
 
+
     while ((arr[e])>pivot){
       e--;
 

@@ -14,6 +14,7 @@ public class BinarSearch {
     System.out.println(xor);
   }
 
+
   static int binary(int[]arr,int s, int e, int target){
 
     if(s>e){

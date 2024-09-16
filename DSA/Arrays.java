@@ -27,6 +27,7 @@ public class Arrays {
         int[][] arr = new int[3][]; // number of columns is not mandatory but rows are
         int[][] arr2 = { { 1, 2, 3 }, { 4, 5, 6 } };
 
+
         // Working with 2D array of dynamic length
         int[][] arr3 = { { 1, 2, 3, 4 }, { 5, 6 }, { 7, 8, 9 } };
 
@@ -55,3 +56,4 @@ public class Arrays {
          ArrayList<ArrayList<Integer>> list1 = new ArrayList<>();
     }
 }
+

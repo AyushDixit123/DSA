@@ -18,6 +18,7 @@ public class removeA {
   //   return str(str,index+1,str1);
   // }
 
+
   static String skip(String str){
     if(str.isEmpty()){
       return " ";

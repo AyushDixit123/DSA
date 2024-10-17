@@ -8,6 +8,7 @@ public class permutation {
 
   // static void seq(String p, String up){
 
+
   static List<String> seq(String p, String up){
 
     // if (up.isEmpty()){
@@ -52,6 +53,42 @@ public class permutation {
 
 
 
+//permutations for array:
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
+public class ArrayPermutation {
+    public static void main(String[] args) {
+        int[] arr = {1, 2};
+        List<List<Integer>> result = permute(arr);
+        for (List<Integer> perm : result) {
+            System.out.println(perm);
+        }
+    }
 
+    public static List<List<Integer>> permute(int[] arr) {
+        return permuteHelper(new ArrayList<>(), Arrays.stream(arr).boxed().toList());
+    }
 
+    private static List<List<Integer>> permuteHelper(List<Integer> processed, List<Integer> unprocessed) {
+        List<List<Integer>> result = new ArrayList<>();
+
+        if (unprocessed.isEmpty()) {
+            result.add(new ArrayList<>(processed));
+            return result;
+        }
+
+        int firstElement = unprocessed.get(0);
+        for (int i = 0; i <= processed.size(); i++) {
+            List<Integer> newProcessed = new ArrayList<>(processed);
+            newProcessed.add(i, firstElement);
+
+            List<Integer> newUnprocessed = new ArrayList<>(unprocessed.subList(1, unprocessed.size()));
+
+            result.addAll(permuteHelper(newProcessed, newUnprocessed));
+        }
+
+        return result;
+    }
+}

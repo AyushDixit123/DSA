@@ -8,6 +8,7 @@ public class subseq {
    System.out.println(seq("","abc",ls));
   }
 
+
   // static void seq(String p, String up){
 
     // if(up.isEmpty()){
@@ -20,6 +21,7 @@ public class subseq {
 
     // seq(p+ch , up.substring(1));
     // seq(p, up.substring(1));
+
 
 
 

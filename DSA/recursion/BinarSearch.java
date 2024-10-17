@@ -27,6 +27,7 @@ public class BinarSearch {
       return m;
     }
 
+
     if(arr[m]>target){
       return binary(arr, s, m-1, target);
     }

@@ -54,6 +54,8 @@ public class Arrays {
          }
          //multidim array list
          ArrayList<ArrayList<Integer>> list1 = new ArrayList<>();
+         //sorting of a 2D array
+        Arrays.sort(intervals, (a,b) -> Integer.compare(a[1], b[1]));
     }
 }
 

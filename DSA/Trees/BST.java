@@ -46,6 +46,7 @@ private void displayTree(Node node, String details){
 }
 
 
+
 public void insert(int value){
 
   root = insertnode(value, root);
@@ -63,6 +64,7 @@ private Node insertnode(int value, Node node){
   }
 
   if(value > node.value){
+
     node.right = insertnode(value, node.right)
   }
 

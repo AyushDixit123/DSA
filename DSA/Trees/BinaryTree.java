@@ -71,5 +71,39 @@ public class BinaryTree {
         display(node.right, indent + "\t");
 
   }
+
+  public void preOrder(Node node){
+    if(node == null){
+      return;
+    }
+    System.out.println("Node value : " + node.value);
+    preOrder(node.left);
+    preOrder(node.right);
+  }
+
+   public void inOrder(Node node){
+    if(node == null){
+      return;
+    }
+
+    inOrder(node.left);
+    System.out.println("Node value : " + node.value);
+    inOrder(node.right);
+  }
+
+  public void postOrder(Node node){
+    if(node == null){
+      return;
+    }
+
+    postOrder(node.left);
+
+    postOrder(node.right);
+    System.out.println("Node value : " + node.value);
+  }
+
+
+
+
 }
 

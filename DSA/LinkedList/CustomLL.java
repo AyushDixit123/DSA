@@ -14,6 +14,7 @@ public class CustomLL {
   }
 
 
+
   private class Node{
     private int value;
 
@@ -46,6 +47,7 @@ public class CustomLL {
   }
 
 
+
   public void display(){
     Node temp = head;
 
@@ -68,6 +70,7 @@ public class CustomLL {
     }
     else{
       Node temp = head;
+      //System.out.println(temp.value);
       for(int i = 1 ; i < index; i++){
         temp = temp.next; // starting from 1 bcz temp = head make the temp at 0 index itself
       }
@@ -114,3 +117,6 @@ public int deleteLast(){
 // head: Points to the first node in the list.
 // tail: Points to the last node in the list.
 // size: Tracks the number of nodes in the list.
+
+
+

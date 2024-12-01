@@ -1,7 +1,5 @@
 
 public class Tree2AVL {
-
-
   private class Node{
     private int value;
     private Node left;

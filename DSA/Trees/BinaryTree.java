@@ -81,6 +81,7 @@ public class BinaryTree {
     preOrder(node.right);
   }
 
+
    public void inOrder(Node node){
     if(node == null){
       return;
@@ -106,4 +107,5 @@ public class BinaryTree {
 
 
 }
+
 

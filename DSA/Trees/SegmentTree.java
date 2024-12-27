@@ -32,9 +32,10 @@ public class SegmentTree {
     this.root = constructTree(arr,0,arr.length-1);
   }
 
-  private constructTree(int[] arr, int start, int end){
+  private Node constructTree(int[] arr, int start, int end){
     if(start == end){
       //leaf node i.e. base condition
+
       Node leaf = new Node(start, end);
       leaf.data = arr[start];
       return leaf;

@@ -5,7 +5,7 @@ public class Human {
     Static two = new Static("arpit", 20, false);
     System.out.println(one.population);
     // fun2(); cannot be accesed becoz its nnstance has not been created
-
+    fun2();
     }
 
     static void fun(){
@@ -15,11 +15,12 @@ public class Human {
       obj.greeting(); //however non static members can be accesed inside static by creating a refrence of instance of non static member inside static
     }
 
-    void fun2(){
+   static void fun2(){
       greeting();
     }
     //needs an instance to be created for its use
-    void greeting(){
+    static void greeting(){
+
       System.out.println("hello");
     }
 }

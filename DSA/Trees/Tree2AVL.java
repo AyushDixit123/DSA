@@ -28,6 +28,7 @@ public class Tree2AVL {
 
   public boolean isEmpty(){
     return root == null;
+
   }
 public void display(){
   displayTree(root, "root node:");

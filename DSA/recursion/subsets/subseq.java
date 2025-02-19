@@ -34,6 +34,7 @@ public class subseq {
        return list;
     }
 
+    
     char ch = up.charAt(0);
 
     seq(p+ch , up.substring(1),list);

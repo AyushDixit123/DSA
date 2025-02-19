@@ -18,6 +18,7 @@ public class BinaryTree {
 
   private Node root;
 
+
   //insert elements
   public void insert(Scanner scanner){
     System.out.println("Enter the root node value:");
